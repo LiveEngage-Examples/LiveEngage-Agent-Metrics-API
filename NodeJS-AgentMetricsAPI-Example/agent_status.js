@@ -25,6 +25,7 @@ var oauth = {
 // Get current agent status
 // Example URL: https://va-a.msghist.liveperson.net/messaging_history/api/account/56072331/agent-view/status
 var url = 'https://{YOUR BASE URI}/messaging_history/api/account/{YOUR ACCOUNT NUMBER}/agent-view/status';
+
 request.post({
     url: url,
     oauth: oauth,
