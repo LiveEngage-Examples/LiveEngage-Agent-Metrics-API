@@ -1,0 +1,97 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Agent Metrics API",
+		"_postman_id": "d0641a59-39fe-ef5e-8581-e84485c594d3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - Summary Method",
+			"request": {
+				"url": "https://{Your Domain}/messaging_history/api/account/{Your Account Number}/agent-view/summary",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth oauth_consumer_key=\"App%20Key\",oauth_token=\"Access%20Token\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1500260472\",oauth_nonce=\"HtR6of\",oauth_version=\"1.0\",oauth_signature=\"esl0fxklpu9h9fibaPUIiSOAjeU%3D\"",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "Example POST to summary method of Agent Metrics API (LiveEngage)."
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Status Method",
+			"request": {
+				"url": "https://{Your Domain}/messaging_history/api/account/{Your Account Number}/agent-view/status",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth oauth_consumer_key=\"App%20Key\",oauth_token=\"Access%20Token\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1500260472\",oauth_nonce=\"HtR6of\",oauth_version=\"1.0\",oauth_signature=\"esl0fxklpu9h9fibaPUIiSOAjeU%3D\"",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": "Example POST to status method of the Agent Metrics API (LiveEngage)."
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Domain",
+			"request": {
+				"url": {
+					"raw": "https://api.liveperson.net/api/account/{YOUR ACCOUNT NUMBER}/service/msgHist/baseURI.json?version=1.0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"api",
+						"account",
+						"{YOUR ACCOUNT NUMBER}",
+						"service",
+						"msgHist",
+						"baseURI.json"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "1.0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "GET request to find the domain needed to make an API call to the Agent Metrics API (LiveEngage)."
+			},
+			"response": []
+		}
+	]
+}
