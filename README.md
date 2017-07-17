@@ -10,3 +10,11 @@ In order to run these examples, you will need to install the request module. To 
 ```sh
 npm install request
 ```
+## Postman Collection - Agent Metrics API Example
+This is a basic example of how to connect to the Agent Metrics API in Postman. The collection contains 3 request that show how to:
+
+* Get the domain of your account for this API
+* Call the status method
+* Call the summary method
+
+To import this collection, just download the json file, and inside Postman, click on the import button, and select that file.
